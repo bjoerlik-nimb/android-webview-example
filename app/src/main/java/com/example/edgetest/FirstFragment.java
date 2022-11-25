@@ -42,6 +42,26 @@ public class FirstFragment extends Fragment {
                         .navigate(R.id.action_FirstFragment_to_SecondFragment, bundle);
             }
         });
+
+        binding.buttonLocal.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Bundle bundle = new Bundle();
+                bundle.putString("url", "http://10.0.2.2:4200");
+                NavHostFragment.findNavController(FirstFragment.this)
+                        .navigate(R.id.action_FirstFragment_to_SecondFragment, bundle);
+            }
+        });
+
+        binding.buttonAws.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Bundle bundle = new Bundle();
+                bundle.putString("url", "http://android-webview-edge-case-client-app.s3-website.eu-north-1.amazonaws.com");
+                NavHostFragment.findNavController(FirstFragment.this)
+                        .navigate(R.id.action_FirstFragment_to_SecondFragment, bundle);
+            }
+        });
     }
 
     @Override

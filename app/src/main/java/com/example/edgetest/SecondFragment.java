@@ -85,7 +85,7 @@ public class SecondFragment extends Fragment {
             webView.post(new Runnable() {
                 @Override
                 public void run() {
-                    webView.loadUrl("javascript:test(" + SecondFragment.this.topPadding + ");");
+                    webView.loadUrl("javascript:updateInsets(" + SecondFragment.this.topPadding + ");");
                 }
             });
         } catch (Exception e) {

@@ -22,7 +22,7 @@
         android:id="@+id/button_first"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/next"
+        android:text="Open URL"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -36,10 +36,38 @@
         android:layout_marginTop="173dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="http://10.0.2.2:4200"
+        android:text="http://?"
         app:layout_constraintBottom_toTopOf="@+id/button_first"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textview_first"
         app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/button_aws"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="158dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="159dp"
+        android:layout_marginBottom="9dp"
+        android:text="10.2.2.2:4200"
+        app:layout_constraintBottom_toTopOf="@+id/button_local"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview_first" />
+
+    <Button
+        android:id="@+id/button_local"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="158dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="159dp"
+        android:layout_marginBottom="28dp"
+        android:text="AWS"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTUrl"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_aws" />
 </androidx.constraintlayout.widget.ConstraintLayout>
