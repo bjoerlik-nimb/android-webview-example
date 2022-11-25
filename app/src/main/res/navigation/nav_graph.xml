@@ -20,6 +20,13 @@
         android:name="com.example.edgetest.SecondFragment"
         android:label="@string/second_fragment_label"
         tools:layout="@layout/fragment_second">
+        <argument
+            android:name="url"
+            app:argType="string"
+            android:defaultValue="http://10.0.2.2:4200"
+            />
+
+
 
         <action
             android:id="@+id/action_SecondFragment_to_FirstFragment"

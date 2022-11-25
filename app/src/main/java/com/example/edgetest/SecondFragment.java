@@ -30,8 +30,7 @@ public class SecondFragment extends Fragment {
         WebView webView = binding.getRoot().findViewById(R.id.webview);
         webView.addJavascriptInterface(new WebInterface(this), "Android");
         webView.getSettings().setJavaScriptEnabled(true);
-        webView.loadUrl("http://10.0.2.2:4200");
-        // webView.loadUrl("http://192.168.1.29:4200");
+        webView.loadUrl(getArguments().getString("url"));
         MainActivity.ignoreInsets = true;
 
         View toolbar = MainActivity.toolbar;
