@@ -113,7 +113,7 @@ public class SecondFragment extends Fragment {
             webView.post(new Runnable() {
                 @Override
                 public void run() {
-                    webView.loadUrl("javascript:test(0);");
+                    webView.loadUrl("javascript:updateInsets(0);");
                 }
             });
         } catch (Exception e) {
